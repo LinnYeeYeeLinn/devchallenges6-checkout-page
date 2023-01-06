@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+:root{
+    --btn: #ff8906;
+    --heading: #272343;
+    --paragraph: #6b6e79;
+    --bg-50: #F2F2F2;
+}
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+    outline: none;
+    border: none;
+}
+.px{
+    width: 70%;
+    margin-inline: auto;
+    padding: 2rem 0;
+}
+.text-heading{
+    color: var(--heading);
+}
+.text-paragraph{
+    color: var(--paragraph);
+}
+.svg{
+    width: 20px;
+    margin-right: 8px;
+}
+main, .total{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.left-side, .right-side{
+    width: 50%;
+}
+h4{
+    margin-top: 2.5rem;
+}
+.my, .check{
+    margin: 1rem 0;
+}
+.input-container{
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, .2);
+    padding: 10px 13px;
+    border-radius: 8px;
+    margin-top: 0.3rem;
+}
+label{
+    font-size: 14px;
+}
+.input{
+    width: 100%;
+}
+.input-flex, .check{
+    display: flex;
+    gap: .5rem;
+}
+.check p{
+    font-size: 12px;
+}
+.btn{
+    padding: 10px 16px;
+    background-color: var(--btn);
+    color: var(--bg-50);
+    border-radius: 5px;
+    float: right;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: var(--heading);
+}
+.dropdown{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+}
+.dropdown-text{
+    font-size: 13px;
+    color: #696969;
+    user-select: none;
+}
+.dropdown-arrow{
+    background-color: var(--bg-50);
+    border-radius: 2px;
+    width: 18px;
+}
+.w-100, select{
+    width: 100%;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+/* right side */
+.product-container{
+    width: 383px;
+    height: 500px;
+    background-color: var(--bg-50);
+    margin-top: 2.5rem;
+    margin-inline: auto;
+    padding: 1.5rem;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.product-container p{
+    font-weight: 600;
+    color: var(--paragraph);
+}
+.products{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.7rem;
+}
+.product-img{
+    width: 140px;
+    border-radius: 10px;
+}
+.product-content{
+    display: flex;
+    flex-direction: column;
+}
+.product-content small{
+    text-decoration: line-through;
+    color: var(--paragraph);
+    margin-left: 0.3rem;
+}
+.product-content .price{
+    margin: .5rem 0 1.5rem 0;
+}
+.text-gold{
+    color: var(--btn);
+}
+.order{
+    border: 1px solid rgba(0, 0, 0, .3);
+    border-radius: 15px;
+    display: flex;
+    margin-top: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem;
+    width: max-content;
+    gap: .5rem;
+}
+.order p{
+    font-size: 20px;
+    user-select: none;
+}
+.order input{
+    background-color: transparent;
+    width: 60px;
+    padding: 5px;
+    font-size: 20px;
+    text-align: center;
+}
+.inc, .dec{
+    background-color: rgba(0, 0, 0, .1);
+    padding: 0 7px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.mt-auto{
+    margin-top: auto;
+}
+hr{
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, .1);
+    margin: .7rem 0;
+}
+
+@media screen and (max-width: 1200px) {
+    .px{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 991px) {
+    .px{
+        width: 95%;
+    }
+}
+@media screen and (max-width: 900px) {
+    main{
+        flex-direction: column-reverse;
+    }
+    .left-side, .right-side{
+        width: 70%;
+        margin: 0 auto;
+    }
+    h1{
+        padding-left: 6.5rem;
+    }
+    .products-container{
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+    }
+    .product-container{
+        width: auto;
+        height: auto;
+    }
+}
+@media screen and (max-width: 690px) {
+    h1{
+        padding-left: 0;
+    }
+    .left-side, .right-side{
+        width: 100%;
+    }
+}
+    .products-container{
+    flex-direction: column;
+    gap: 0;
+}
